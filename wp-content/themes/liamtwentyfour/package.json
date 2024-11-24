@@ -2,13 +2,23 @@
   "name": "liamtwentyfour",
   "version": "1.0.0",
   "description": "Liams custom theme",
-  "main": "src/index.js",
   "scripts": {
     "start": "wp-scripts start",
-    "build": "wp-scripts build"
+    "build": "wp-scripts build",
+      "check-engines": "wp-scripts check-engines",
+      "check-licenses": "wp-scripts check-licenses",
+      "format": "wp-scripts format",
+      "lint:css": "wp-scripts lint-style",
+      "lint:js": "wp-scripts lint-js",
+      "lint:md:docs": "wp-scripts lint-md-docs",
+      "lint:pkg-json": "wp-scripts lint-pkg-json",
+      "packages-update": "wp-scripts packages-update",
+      "plugin-zip": "wp-scripts plugin-zip",
+      "test:e2e": "wp-scripts test-e2e",
+      "test:unit": "wp-scripts test-unit-js"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^28.4.0",
+    "@wordpress/scripts": "^28.6.0",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7"

@@ -1,4 +1,5 @@
 <?php
+
 function enqueue_scripts()
 {
     // Register the script
@@ -24,6 +25,6 @@ function tailwind_setup_scripts()
     );
 }
 
-
 add_action('wp_enqueue_scripts', 'tailwind_setup_scripts');
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
+

@@ -2,6 +2,7 @@
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
 node_modules/
+build/
 
 # Core
 #
@@ -20,7 +21,7 @@ license.txt
 readme.html
 wp-*.php
 xmlrpc.php
-build/
+
 
 # Configuration
 wp-config.php
