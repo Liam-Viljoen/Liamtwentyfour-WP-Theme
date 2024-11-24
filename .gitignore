@@ -20,6 +20,7 @@ license.txt
 readme.html
 wp-*.php
 xmlrpc.php
+build/
 
 # Configuration
 wp-config.php
