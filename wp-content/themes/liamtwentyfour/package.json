@@ -1,0 +1,19 @@
+{
+  "name": "liamtwentyfour",
+  "version": "1.0.0",
+  "description": "Liams custom theme",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^28.4.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './fonts.css';
+
+@layer base {
+    html {
+        font-family: "Roboto", system-ui, sans-serif;
+    }
+}
+
+:root {
+    --main-deep-red: #8B0000;
+    --main-bright-red: #FF0000;
+    --main-dark-maroon: #4B0000;
+    --main-black: #000000;
+    --main-dark-grey: #1C1C1C;
+    --main-crimson: #DC143C;
+    --main-dark-crimson: #A52A2A;
+}
+
+html,
+body {
+    scroll-behavior: auto;
+    /* or just remove any smooth scroll behavior */
+}
+
+
+.rotating-text h2 .word {
+    position: absolute;
+    overflow: hidden;
+}
+
+.letter {
+    /*This will let you apply transforms to the span char elements.*/
+    display: inline-block;
+}
