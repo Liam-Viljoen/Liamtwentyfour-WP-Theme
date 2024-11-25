@@ -3,19 +3,12 @@
   "version": "1.0.0",
   "description": "Liams custom theme",
   "scripts": {
-    "start": "wp-scripts start",
-    "build": "wp-scripts build",
-      "check-engines": "wp-scripts check-engines",
-      "check-licenses": "wp-scripts check-licenses",
-      "format": "wp-scripts format",
-      "lint:css": "wp-scripts lint-style",
-      "lint:js": "wp-scripts lint-js",
-      "lint:md:docs": "wp-scripts lint-md-docs",
-      "lint:pkg-json": "wp-scripts lint-pkg-json",
-      "packages-update": "wp-scripts packages-update",
-      "plugin-zip": "wp-scripts plugin-zip",
-      "test:e2e": "wp-scripts test-e2e",
-      "test:unit": "wp-scripts test-unit-js"
+    "build:admin": "wp-scripts build src/admin.js --output-path=build/admin",
+    "build:frontend": "wp-scripts build src/frontend.js --output-path=build/frontend",
+    "build": "npm run build:admin && npm run build:frontend",
+    "start:admin": "wp-scripts start src/admin.js --output-path=build/admin",
+    "start:frontend": "wp-scripts start src/frontend.js --output-path=build/frontend",
+    "start": "npm run start:admin & npm run start:frontend"
   },
   "devDependencies": {
     "@wordpress/scripts": "^28.6.0",
